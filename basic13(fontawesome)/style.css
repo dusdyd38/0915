@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+img{width: 100%;}
+
+.wrap{width: 800px;
+margin: auto;}
+
+.wrap .slick1 .slick-prev{
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translatey(-50%);
+    z-index: 100;
+    visibility: hidden;
+}
+.wrap .slick1 .slick-prev:after{
+    content: "\f359";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 60px; /* FontAwesomed이 그림으로 보이지만 글자이다. */
+    color:#fff;
+    text-shadow: -1px -1px 7px black;
+}
+
+.wrap .slick1 .slick-next{
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translatey(-50%);
+    z-index: 100;
+}
+.wrap .slick1 .slick-next:after{
+content: "\f35a";
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+visibility: visible;
+font-size: 60px;
+color:#fff;
+text-shadow: -1px -1px 7px black;
+}
