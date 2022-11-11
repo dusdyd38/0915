@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        .전체{background-color: green; width: 800px; margin: auto; padding: 30px;}
+        .전체 .박스{position: relative; width: 50px; height: 50px;
+        margin: 50px 0; background-color: red;
+    /* animation: name duration delay fill-mode; */
+    animation: 동작 2s 1s 1 none;}
+        /* margin(위아래, 양옆;)은 위아래 값을 줄때 설정한 값에 큰 값이 들어간다.
+        나란히 정렬할 때는 +가 된다. 
+        -내 자식의 첫번째에게 위쪽 마진을 줄 때는 패딩값으로 마진을 준다
+        
+animation-name : keyframe이름
+animation-duration : 애니메이션 움직임의 시간
+animation-timing-function : 움직임의 속도(ease)
+animation-delay : 지연시간(1s)
+animation-iteration-count : 횟수(1, infinite)
+animation-direction : 방향(nomal(기본값)|reverse(역방향)|alternate(순방향->역뱡향)|alternate-reverse(역방향->순방향))
+animation-fill-mode : 끝난 후 상태(none|forwards(끝난 지점에 있음)|backwards(끝난후 시작지점으로 돌아옴))
+animation-play-state : 진행상태(pause(정지)|running(실행)) */
+.전체 .박스2{animation-fill-mode: forwards;}
+.전체 .박스3{animation-fill-mode: backwards;}
+.전체 .박스4{animation-fill-mode: both;}
+        @keyframes 동작{
+            0%{left: 0%;}
+            100%{left: 750px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="전체">
+        <div class="박스 박스1">박스1</div>
+        <div class="박스 박스2">박스2</div>
+        <div class="박스 박스3">박스3</div>
+        <div class="박스 박스4">박스4</div>
+    </div>
+</body>
+</html>
