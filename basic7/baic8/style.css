@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.전체 {
+    background-color: #395144;
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.전체 .첫째 {
+    background-color: #4E6C50;
+    padding: 20px;
+}
+
+.전체 .첫째 .첫손 {
+    float: left;
+    width: 50%;
+    height: 200px;
+}
+
+.전체 .첫째 .첫손.첫자식1 {
+    background-color: #AA8B56;
+    position: relative;
+
+}
+
+.전체 .첫째 .첫손.첫자식1 .연예인 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(x값,y값); 백분율의 기준은 자신이다. 어떤 영역을 중앙에 배치할 때 많이 사용*/
+    transform: translate(-50%,-50%); 
+    width: 200px
+    
+}
+
+.전체 .첫째 .첫손.첫자식1 .연예인 img {
+    width: 100%;
+    display: block;
+}
+
+.전체 .첫째 .첫손.첫자식2 {
+    background-color: #F0EBCE;
+    position: relative; overflow: hidden;
+}
+.전체 .첫째 .첫손.첫자식2 .크기{
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%; overflow: hidden;
+    transition: 0.3s;
+}
+.전체 .첫째 .첫손.첫자식2:hover .크기{
+    transform: scale(1.2) /* 120% */
+    rotate(360deg); /* degree(각도) */
+}
+.전체 .첫째 .첫손.첫자식2 .크기 img{width: 100%;}
+
+.전체 .첫째 .첫막내 {
+    clear: both;
+}
+
+.전체 .둘째 {
+    font-size: 50px;
+    background-color: #000;
+    height: 500px;
+    position: relative;
+}
+
+.전체 .둘째 .video{position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+    width: 500px}
+.전체 .둘째 .video video{width: 100%;} 
+.전체 .둘째 .캐릭터{width: 70px; position: absolute; right:8%; top: 6%;
+transform: rotate(334deg);}
+.전체 .둘째 .캐릭터 svg{}
+
+
+.전체 .셋째{height: 400px;
+position: relative;}
+.전체 .셋째 .일러{width: 300px;
+position: absolute; left: 50%; top: 50%;
+transform: translate(-50%,-50%) scale(0.1);
+opacity: 0; transition: 0.3s;}
+
+.전체 .셋째:hover .일러{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+} /* svg는 크기 넓이 다 부모가 역할을해야한다 */
+.전체 .셋째:hover .일러 svg{}/* svg는 크기 넓이 다 부모가 역할을해야한다 */
+
+
+
+/* float과position을 알면 애지간하면 화면 만든다. */

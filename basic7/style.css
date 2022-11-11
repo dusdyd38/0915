@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+.전체{background-color: #FDFDBD;
+      width: 600px;
+      margin-top: 2200px;
+    position: relative;}
+.전체 .첫째{background-color: #C8FFD4;
+         width: 200px; height: 200px;
+         /* 이동 시, position이 있어야 한다 */
+         position: relative; /* 주위에 아무런 영향을 주지 않는다. */
+        left:300px;
+    }
+
+.전체 .둘째{background-color: #B8E8FC;
+         width: 200px; height: 200px;
+        position: absolute; left: 100px; top: 0;}
+
+.전체 .셋째{background-color: #B1AFFF;
+         width: 200px; height: 200px;}
+
+.fixed{background-color: gray; color: white;
+position: fixed; /* 화면기준 */
+top: 100px; right: 100px;
+padding: 20px;}
