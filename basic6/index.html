@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <div class="비디오전체">
+    <div class="비디오">
+        <!-- muted음소거 autoplay 자동재생(음소거없이 자동재생 안 됨) -->
+      <!--   <video id="videoTag" controls="" autoplay muted>  --><!--controls="" poster="https://img.megabox.co.kr/SharedImg/2022/10/12/4vhE6cGOLoLO7gpzq0U8Ad4iVC888qFT_1100.jpg">  어필하고 싶은 이미지 올려 놓음(ctrl누르고 클릭하면 이미지가 뜸) -->
+            <!-- <source src="https://s3550.smartucc.kr/encodeFile/3550/2022/10/11/85b3b529fe4add99172daba7d19d6049_W.mp4" type="video/mp4">
+        </video> -->
+        <video controls autoplay muted
+        src="https://s3550.smartucc.kr/encodeFile/3550/2022/10/11/85b3b529fe4add99172daba7d19d6049_W.mp4"></video>
+    </div>
+ </div>
+    <div class="main">
+        <div class="첫째 약">
+            <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+            class="첫째손 자식1">바빠?</div>
+            <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
+            class="첫째손 자식2">바쁘냐고</div>
+        </div><!-- 첫째 -->
+        <div class="둘째">
+            <div 
+            data-aos="zoom-out-left"
+            data-aos-delay="400"
+            class="둘째손 둘째손1">바쁘다바빠</div>
+            <div
+            data-aos="zoom-out-left"
+            data-aos-delay="600"
+            class="둘째손 둘째손2">현대사회</div>
+            <div
+            data-aos="zoom-out-left"
+            data-aos-delay="800"
+            class="둘째손 둘째손3">흑흑</div>
+        <div class="막내"></div>
+        </div> <!-- 둘째 -->
+        <div class="셋째">
+            <div class="셋째손">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vp1O5EbCu54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> <!-- 셋째 -->
+        <div class="넷째 약">
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="200"
+            class="넷째손 넷자손1">넷자손1</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="400"
+            class="넷째손 넷자손2">넷자손2</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="600"
+            class="넷째손 넷자손3">넷자손3</div>
+            <div 
+            data-aos="flip-left"
+            data-aos-delay="800"
+            class="넷째손 넷자손4">넷자손4</div>
+        </div> <!-- 넷째 -->
+    </div> <!-- main -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
