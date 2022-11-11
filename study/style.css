@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+*{margin: 0; padding: 0;}
+.치매약:after{content:""; clear: both;display: block;}
+
+.전체{background-color: #E1FFB1; 
+    width: 727px; margin: auto; padding: 20px; margin-top: 20px;}
+.전체 .첫째{background-color: #C7F2A4;}
+.전체 .첫째 .첫자손1{
+    background-image: url("https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86267/86267207030_727.jpg");
+    height: 405px;
+    transition: 0.3s;}
+.전체 .첫째 .첫자손1:hover{background-image: url("https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000086/86267/86267207027_727.jpg");}
+
+.전체 .둘째{background-color: #B6E388; padding: 20px;
+}
+.전체 .둘째 .둘자손{float:left; width:23.5%; height: 300px; margin-right: 2%;}
+.전체 .둘째 .둘자식1{background-color: #FCFFB2;
+    left: 161px;}
+.전체 .둘째 .둘자식1 .둘손자{background-color: #C8FFD4;
+    left: 161px;
+    height: 300px;
+    position: relative;
+    transition: 0.3s;}
+.전체 .둘째 .둘자식1:hover .둘손자{left: 0;}
+.전체 .둘째 .둘자식2{background-color: #C8FFD4;}
+.전체 .둘째 .둘자식3{background-color: #B8E8FC;}
+.전체 .둘째 .둘자식4{background-color: #B1AFFF; margin: 0%;}
