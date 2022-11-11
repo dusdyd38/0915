@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jua&display=swap');
+
+/* font-family: 'Gaegu', cursive;
+font-family: 'Jua', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치매약:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.전체 {
+    background-color: #38E54D;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+/* 첫째 */
+.전체 .첫째 {
+    background-color: #749F82;
+    padding: 20px;
+}
+
+.전체 .첫째 .첫자손 {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+.전체 .첫째 .첫자손.첫자식1 {
+    position: relative;
+    font-family: 'Gaegu', cursive;
+    background-color: #E1FFB1;
+    overflow: hidden;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 {
+    position: relative;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000077/77571/77571116932_727.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .하 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    color: #fff;
+    padding: 3px 5px;
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 {
+    position: absolute;
+     /* left: 0; top: 0; width: 100%; height: 100%;  부모한테 딱 맞추겠다.*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000077/77571/77571116936_727.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    transform: translateX(-100%);
+}
+
+.전체 .첫째 .첫자손.첫자식1:hover .상 {
+    transform: translateX(0%);
+}
+
+.전체 .첫째 .첫자손.첫자식1 .상 h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    color: #fff;
+}
+/* end 첫자식1 */
+
+.전체 .첫째 .첫자손.첫자식2{
+    position: relative;
+    font-family: 'Jua', sans-serif;
+    background-color: #C7F2A4;
+    background-position: center;
+    height: 200px;
+    overflow: hidden;
+}
+.전체 .첫째 .첫자손.첫자식2 .상하{
+    position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.전체 .첫째 .첫자손.첫자식2 .상하 h4{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    color: #fff; padding: 3px 5px;
+}
+.전체 .첫째 .첫자손.첫자식2 .상{
+    z-index: 2;
+    /* z-index는 position이 있어야 적용됨,
+    레이어를 위로 올리고 내리는 것과 동일. 숫자가 많을 수록 위에 있다는 것. */
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996503_727.jpg);
+    transform:  translateY(-100%);
+    transition: 0.3s;
+}
+.전체 .첫째 .첫자손.첫자식2:hover .상{
+    transform:  translateY(0%);
+}
+.전체 .첫째 .첫자손.첫자식2 .하{
+    z-index: 1;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996497_727.jpg);
+}
+
+
+
+
+/* end 첫자식2 */
+.전체 .첫째 .첫자손.첫자식3 {
+    position: relative;
+background-color: #B6E388;
+height: 200px;
+overflow: hidden;
+}
+.전체 .첫째 .첫자손.첫자식3 .상하{
+    position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.전체 .첫째 .첫자손.첫자식3 .상하 h4{
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #222;
+    color: #fff; padding: 3px 5px;
+}
+.전체 .첫째 .첫자손.첫자식3 .상{
+    z-index: 2;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996505_727.jpg);
+    transform: scale(0.1);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.전체 .첫째 .첫자손.첫자식3:hover .상{
+    transform: scale(0.8);
+    opacity: 1;
+}
+.전체 .첫째 .첫자손.첫자식3 .하{
+    z-index: 1;
+    background-image: url(https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000076/76249/7624996502_727.jpg);
+}
+
+/* end 첫자식3 */
+
+.전체 .첫째 .첫자손.첫자식4 {
+    position: relative;
+    background-color: #FCFFB2;
+    margin-right: 0;  height: 200px;
+    overflow: hidden;
+}
+.전체 .첫째 .첫자손.첫자식4 .비디오{
+    position:absolute; width: 100%;
+    left: 50%; top:50%; transform:translate(-50%,-50%);
+   }
+.전체 .첫째 .첫자손.첫자식4 .비디오 video{width: 100%;}
+.전체 .첫째 .첫자손.첫자식4 h4{
+    position:absolute;
+    left: 50%; top:50%; transform:translate(-50%,110px);
+    color: #222;
+   }
+   .전체 .첫째 .첫자손.첫자식4:hover h4{
+   animation: mymove 2s;
+}
+
+@keyframes mymove {
+    0% {transform:translate(-50%,110px);}
+    100% {transform:translate(-50%,-110px);} 
+}
+
+
+/* .전체 .첫째 .첫막내{clear: both} */
+/* end 첫째 */
+/* 둘째 */
